@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import Header from '../UI/organisms/Header'
+import Header from './Header'
 import ContextEvent from '../UI/organisms/ContextEvent'
 
 const PageContainer = styled.div`
