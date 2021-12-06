@@ -1,15 +1,26 @@
+import { useState } from 'react'
+import Link from 'next/link'
 import styled from 'styled-components'
 
 const WhiteCircleContainer = styled.div`
   width: 150px;
   height: 150px;
-  max-width: 274px;
-  max-height: 274px;
   border-radius: 50%;
   background-color: white;
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
+  z-index: 1;
+  cursor: pointer;
+  @media (min-width: 767px) {
+    width: 242px;
+    height: 242px;
+  }
+  @media (min-width: 1023px) {
+    width: 274px;
+    height: 274px;
+  }
 `
 
 const WhiteCircleText = styled.div`
@@ -24,11 +35,44 @@ const WhiteCircleText = styled.div`
   }
 `
 
+const HoverEventCircle = styled.div`
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  background: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.1;
+  border-radius: 50%;
+  @media (min-width: 767px) {
+    width: 375px;
+    height: 375px;
+  }
+  @media (min-width: 1023px) {
+    width: 450px;
+    height: 450px;
+  }
+`
+
 const Explore = () => {
+  const [HoverToggle, setHoverToggle] = useState(false);
+  function onMouseOver() {
+    setHoverToggle(true)
+  }
+
+  function onMouseOut() {
+    setHoverToggle(false)
+  }
+
   return (
-    <WhiteCircleContainer>
-      <WhiteCircleText>EXPLORE</WhiteCircleText>
-    </WhiteCircleContainer>
+    <Link href="/">
+      <WhiteCircleContainer onMouseOver={() => onMouseOver()} onMouseOut={() => onMouseOut()}>
+        <WhiteCircleText>EXPLORE</WhiteCircleText>
+        {HoverToggle && <HoverEventCircle />}
+      </WhiteCircleContainer>
+    </Link>
   )
 }
 

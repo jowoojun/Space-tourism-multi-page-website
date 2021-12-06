@@ -9,8 +9,6 @@ const context = {
 export default function Home() {
   return (
     <HomeTemplate 
-      gap1={'1rem'} 
-      gap2={'1rem'} 
       context={context}
     />
   )

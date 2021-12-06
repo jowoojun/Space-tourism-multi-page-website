@@ -3,7 +3,11 @@ import Image from 'next/image'
 import styled from 'styled-components'
 
 const ImageContainer = styled.div`
-  padding: 1rem;
+  padding: 1.5rem;
+
+  @media screen and (min-width: 767px) {
+    padding: 1.5rem 2.5rem
+  }
 `
 
 const Logo = ({width, height}) => {

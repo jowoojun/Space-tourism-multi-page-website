@@ -21,11 +21,11 @@ const PageContainer = styled.div`
   } 
 `
 
-const HomeTemplate = ({gap1, gap2, context}) => {
+const HomeTemplate = ({context}) => {
   return (
     <PageContainer>
       <Header />
-      <ContextEvent gap1={gap1} gap2={gap2} context={context}/>
+      <ContextEvent context={context}/>
     </PageContainer>
   )
 }

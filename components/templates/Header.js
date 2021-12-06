@@ -35,7 +35,7 @@ const Header = ({}) => {
   return (
     <>
       {modalToggle && <MenuModal menuList={menuList} onClick={onClickClose}/> }
-      <HeaderList onClick={onClickOpen}/>
+      <HeaderList menuList={menuList} onClick={onClickOpen}/>
     </>
   )
 }

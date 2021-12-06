@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import ThreeContext from '../molecules/ThreeContext';
+import ContextType1 from '../molecules/ThreeContext';
 import Explore from '../atoms/Explore';
 
 const PaddingContainer = styled.div`
@@ -9,16 +9,20 @@ const PaddingContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 0 3rem;
-  
+  @media screen and (min-width: 767px) {
+    padding: 6.625rem 0 5.625rem;
+  }
   @media screen and (min-width: 1023px) {
     flex-direction: row;
+    align-items: flex-end;
+    padding: 8.1825rem 10.3125rem;
   }
 `
 
-const ContextEvent = ({gap1, gap2, context}) => {
+const ContextEvent = ({context}) => {
   return (
     <PaddingContainer>
-      <ThreeContext gap1={gap1} gap2={gap2} context={context} />
+      <ContextType1 context={context} />
       <Explore />
     </PaddingContainer>
   )

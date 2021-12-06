@@ -11,7 +11,7 @@ const Modal = styled.div`
   right: 0;
   width: 68%;
   height: 100%;
-  z-index: 1;
+  z-index: 9999;
   background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(81.5485px);
 `

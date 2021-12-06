@@ -8,6 +8,11 @@ const LimitedContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  @media screen and (min-width: 1023px) {
+    align-items: flex-start;
+    width: auto;
+  }
 `
 const FlexContainer = styled.div`
   display: flex;
@@ -15,14 +20,27 @@ const FlexContainer = styled.div`
   justify-content: center;
   align-items: center;
   max-width: 450px;
+
+  @media screen and (min-width: 1023px) {
+    align-items: flex-start;
+  }
 `
 
-const ThreeContext = ({gap1, gap2, context}) => {
+const Blank = styled.div`
+  height: 1rem;
+  @media screen and (min-width: 767px) {
+    height: 1.5rem;
+  }
+`
+
+const ThreeContext = ({context}) => {
   return (
     <LimitedContainer>
       <FlexContainer>
-        <Heading_5 gap={gap1}>{context.h5}</Heading_5>
-        <Heading_1 gap={gap2}>{context.h1}</Heading_1>
+        <Heading_5>{context.h5}</Heading_5>
+        <Blank />
+        <Heading_1>{context.h1}</Heading_1>
+        <Blank />
         <BodyFont>{context.body}</BodyFont>
       </FlexContainer>
     </LimitedContainer>

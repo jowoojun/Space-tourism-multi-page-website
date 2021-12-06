@@ -7,6 +7,7 @@ const ImageContainer = styled.button`
   outlin: 0;
   background: transparent;
   margin-left: auto;
+  cursor: pointer;
 `
 
 const Close = ({onClick, width, height}) => {
