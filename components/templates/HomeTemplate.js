@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 import Header from './Header'
-import ContextEvent from '../UI/organisms/ContextEvent'
+import ContextExplore from '../UI/organisms/ContextExplore'
 
 const PageContainer = styled.div`
   width: 100vw;
@@ -25,7 +25,7 @@ const HomeTemplate = ({context}) => {
   return (
     <PageContainer>
       <Header />
-      <ContextEvent context={context}/>
+      <ContextExplore context={context}/>
     </PageContainer>
   )
 }
