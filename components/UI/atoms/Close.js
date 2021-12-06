@@ -6,14 +6,15 @@ const ImageContainer = styled.button`
   border: 0;
   outlin: 0;
   background: transparent;
+  margin-left: auto;
 `
 
-const List = ({onClick, width, height}) => {
+const Close = ({onClick, width, height}) => {
   return (
     <ImageContainer onClick={() => onClick()}>
-      <Image src="/shared/icon-hamburger.svg" alt="List" width={width} height={height} />
+      <Image src="/shared/icon-close.svg" alt="Close" width={width} height={height} />
     </ImageContainer>
   )
 }
 
-export default List;
+export default Close;

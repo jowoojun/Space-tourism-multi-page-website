@@ -114,6 +114,16 @@ export const NavFont = styled(DefaultFont)`
   }
 `
 
+export const NavNumberFont = styled(NavFont)`
+  font-weight: 700;
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 1023px) {
+    display: none;
+  }
+`
+
 export const BodyFont = styled(DefaultFont)`
   font-family: 'Barlow', sans-serif;
   font-size: 15px;
