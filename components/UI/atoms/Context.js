@@ -3,7 +3,6 @@ import styled from 'styled-components'
 const DefaultFont = styled.p`
   margin: 0;
   padding: 0;
-  margin-bottom: ${props => props.gap? props.gap : 0}
 `
 
 export const Heading_1 = styled(DefaultFont)`
@@ -120,7 +119,7 @@ export const NavNumberFont = styled(NavFont)`
     display: none;
   }
   @media screen and (min-width: 1023px) {
-    display: none;
+    display: block;
   }
 `
 
@@ -139,5 +138,6 @@ export const BodyFont = styled(DefaultFont)`
   @media screen and (min-width: 1023px) {
     font-size: 18px;
     line-height: 32px;
+    text-align: left;
   }
 `
