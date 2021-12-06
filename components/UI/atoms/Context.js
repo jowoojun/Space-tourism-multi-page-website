@@ -97,7 +97,7 @@ export const SubHeading_2 = styled(DefaultFont)`
   color: white;
 `
 
-export const NavText = styled(DefaultFont)`
+export const NavFont = styled(DefaultFont)`
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 16px;
   letter-spacing: 2.7px;
@@ -114,7 +114,7 @@ export const NavText = styled(DefaultFont)`
   }
 `
 
-export const BodyText = styled(DefaultFont)`
+export const BodyFont = styled(DefaultFont)`
   font-family: 'Barlow', sans-serif;
   font-size: 15px;
   line-height: 25px;

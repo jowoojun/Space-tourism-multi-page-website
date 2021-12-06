@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { Heading_1, Heading_5, BodyText } from '../atoms/Context'
+import { Heading_1, Heading_5, BodyFont } from '../atoms/Context'
 
 const LimitedContainer = styled.div`
   width: 100%;
@@ -23,7 +23,7 @@ const ThreeContext = ({gap1, gap2, context}) => {
       <FlexContainer>
         <Heading_5 gap={gap1}>{context.h5}</Heading_5>
         <Heading_1 gap={gap2}>{context.h1}</Heading_1>
-        <BodyText>{context.body}</BodyText>
+        <BodyFont>{context.body}</BodyFont>
       </FlexContainer>
     </LimitedContainer>
   )
