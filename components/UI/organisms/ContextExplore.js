@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import ContextType1 from '../molecules/ThreeContext';
+import ContextType1 from '../molecules/ContextType1';
 import Explore from '../atoms/Explore';
 
 const PaddingContainer = styled.div`
