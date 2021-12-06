@@ -123,6 +123,13 @@ export const NavNumberFont = styled(NavFont)`
   }
 `
 
+export const NavContentNumberFont = styled(NavFont)`
+  font-weight: 700;
+  line-height: 19px;
+  color: #FFFFFF;
+  opacity: 0.25;
+`
+
 export const BodyFont = styled(DefaultFont)`
   font-family: 'Barlow', sans-serif;
   font-size: 15px;

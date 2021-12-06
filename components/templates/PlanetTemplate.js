@@ -1,10 +1,16 @@
 import styled from 'styled-components'
 
 import Header from './Header'
+import PlanetImages from '../UI/molecules/PlanetImages'
+import ContextType2 from '../UI/molecules/ContextType2'
+import PlanetDetail from '../UI/molecules/PlanetDetail'
+import VerticalTabs from '../UI/molecules/VerticalTabs'
+import HeaderNavText from '../UI/molecules/HeaderNavText'
 
 const PageContainer = styled.div`
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   background: url(/destination/background-destination-mobile.jpg) no-repeat;
   background-size: cover;
   display: flex;
@@ -20,11 +26,27 @@ const PageContainer = styled.div`
   } 
 `
 
-const PlanetTemplate = ({}) => {
+const Horizon = styled.div`
+  margin: 0 1.5rem;
+  border-top: 1px solid #383b4b;
+`
+
+const ContextPlanetContainer = styled.div`
+
+`
+
+const PlanetTemplate = ({destination}) => {
   return (
     <PageContainer>
       <Header />
-      
+      <ContextPlanetContainer>
+        <HeaderNavText />
+        <PlanetImages images={destination.images?.png}/>
+        <VerticalTabs />
+        <ContextType2 name={destination.name} context={destination.description}/>
+        <Horizon />
+        <PlanetDetail travel={destination.travel} distance={destination.distance}/>
+      </ContextPlanetContainer>
     </PageContainer>
   )
 }
