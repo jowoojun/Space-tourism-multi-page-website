@@ -35,7 +35,6 @@ const MenuItemContainer = styled.div`
 `
 
 const Blank = styled.div`
-  
   @media screen and (min-width: 1023px) {
     margin-left: 11px;
   }
@@ -49,7 +48,10 @@ const VerticalMenu = ({menuList}) => {
       {menuList.map((menu, idx) => 
         <Link href={menu.href}>
           <a>
-            <MenuItemContainer currentHref={router.pathname} targetHref={menu.href} >
+            <MenuItemContainer 
+              currentHref={router.pathname === '/' ? '/' : router.pathname.split('/')[1]} 
+              targetHref={menu.href === '/' ? '/' : menu.href.split('/')[1]} 
+            >
               <NavNumberFont>{fillZero(2, idx)}</NavNumberFont>
               <Blank />
               <NavFont>{menu.text}</NavFont>

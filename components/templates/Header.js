@@ -10,7 +10,7 @@ const menuList = [
   },
   {
     text: 'DESTINATION',
-    href: '/destination'
+    href: '/destination/moon'
   },
   {
     text: 'CREW',
