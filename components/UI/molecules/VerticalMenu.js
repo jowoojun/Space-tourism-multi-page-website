@@ -46,7 +46,7 @@ const VerticalMenu = ({menuList}) => {
   return (
     <VerticalMenuContainer>
       {menuList.map((menu, idx) => 
-        <Link href={menu.href}>
+        <Link key={menu.text} href={menu.href}>
           <a>
             <MenuItemContainer 
               currentHref={router.pathname === '/' ? '/' : router.pathname.split('/')[1]} 

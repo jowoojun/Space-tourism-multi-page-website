@@ -30,7 +30,7 @@ const NavItem = ({menuList}) => {
   return (
     <NavMenuItemContainer>
       {menuList.map((menu, idx) => 
-        <Link href={menu.href}>
+        <Link key={menu.text} href={menu.href}>
           <li>
             <NavTextContainer style={{borderRight: router.pathname === menu.href && "4px solid white"}} >
               <NavNumberFont>{fillZero(2, idx)}</NavNumberFont>
