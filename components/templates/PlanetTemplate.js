@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 
+import BackgroundImageContainer from '../UI/atoms/BackgroundImageContainer'
 import Header from './Header'
 import ContentImage from '../UI/molecules/ContentImage'
 import ContextType2 from '../UI/molecules/ContextType2'
@@ -9,15 +10,9 @@ import HeaderNavText from '../UI/molecules/HeaderNavText'
 
 import { ImageInfo } from '../../config/designConfig'
 
-const PageContainer = styled.div`
-  width: 100vw;
-  min-height: 100vh;
-  height: 100%;
+const PageContainer = styled(BackgroundImageContainer)`
   background: url(/destination/background-destination-mobile.jpg) no-repeat;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-
   @media screen and (min-width: 767px) {
     background: url(/destination/background-destination-tablet.jpg) no-repeat;
     background-size: cover;
