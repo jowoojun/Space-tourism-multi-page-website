@@ -20,6 +20,7 @@ const PageContainer = styled(BackgroundImageContainer)`
   @media screen and (min-width: 1023px) {
     background: url(/destination/background-destination-desktop.jpg) no-repeat;
     background-size: cover;
+    justify-content: space-between;
   } 
 `
 
