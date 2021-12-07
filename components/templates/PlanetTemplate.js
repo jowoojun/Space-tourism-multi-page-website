@@ -49,7 +49,7 @@ const PlanetTemplate = ({destination, tabItems}) => {
       <Header />
       {destination ? 
         <>
-          <HeaderNavText />
+          <HeaderNavText number={"01"} text={"PICK YOUR DESTINATION"} />
           <DesktopSpreadContainer>
             <>
               <ContentImage images={destination.images} name={destination.name} imageInfo={ImageInfo.destination} />

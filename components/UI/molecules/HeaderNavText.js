@@ -26,12 +26,12 @@ const Blank = styled.div`
   }
 `
 
-const HeaderNavText = () => {
+const HeaderNavText = ({number, text}) => {
   return (  
     <HeaderNavTextContainer>
-      <Heading_5NumberFont>01</Heading_5NumberFont>
+      <Heading_5NumberFont>{number}</Heading_5NumberFont>
       <Blank />
-      <Heading_5>PICK YOUR DESTINATION</Heading_5>
+      <Heading_5>{text}</Heading_5>
     </HeaderNavTextContainer>
   )
 }
