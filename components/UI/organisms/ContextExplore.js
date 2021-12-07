@@ -19,10 +19,21 @@ const PaddingContainer = styled.div`
   }
 `
 
+const Blank = styled.div`
+  margin-top: 81px;
+  @media screen and (min-width: 767px) {
+    margin-top: 156px;
+  }
+  @media screen and (min-width: 1023px) {
+    margin-top: 0;
+  }
+`
+
 const ContextEvent = ({context}) => {
   return (
     <PaddingContainer>
       <ContextType1 context={context} />
+      <Blank />
       <Explore />
     </PaddingContainer>
   )

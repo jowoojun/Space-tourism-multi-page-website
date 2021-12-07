@@ -5,7 +5,8 @@ import ContextExplore from '../UI/organisms/ContextExplore'
 
 const PageContainer = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   background: url(/home/background-home-mobile.jpg) no-repeat;
   background-size: cover;
   display: flex;
