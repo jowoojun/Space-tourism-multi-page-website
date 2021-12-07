@@ -15,7 +15,7 @@ const PaddingContainer = styled.div`
   @media screen and (min-width: 1023px) {
     flex-direction: row;
     align-items: flex-end;
-    padding: 8.1825rem 10.3125rem;
+    padding: 0 10.3125rem 131px;
   }
 `
 

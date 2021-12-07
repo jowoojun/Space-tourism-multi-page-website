@@ -19,6 +19,7 @@ const PageContainer = styled.div`
   @media screen and (min-width: 1023px) {
     background: url(/home/background-home-desktop.jpg) no-repeat;
     background-size: cover;
+    justify-content: space-between;
   } 
 `
 
