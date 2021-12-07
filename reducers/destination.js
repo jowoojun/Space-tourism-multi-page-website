@@ -7,25 +7,25 @@ export const initialState = {
   loadDestinationError: null,
 };
 
-export const LOAD_DESTINATION_REQUEST = 'LOAD_DESTINATION_REQUEST';
-export const LOAD_DESTINATION_SUCCESS = 'LOAD_DESTINATION_SUCCESS';
-export const LOAD_DESTINATION_FAILURE = 'LOAD_DESTINATION_FAILURE';
+export const LOAD_DESTINATION_BY_NAME_REQUEST = 'LOAD_DESTINATION_BY_NAME_REQUEST';
+export const LOAD_DESTINATION_BY_NAME_SUCCESS = 'LOAD_DESTINATION_BY_NAME_SUCCESS';
+export const LOAD_DESTINATION_BY_NAME_FAILURE = 'LOAD_DESTINATION_BY_NAME_FAILURE';
 
 const ReducerDestination =  (state = initialState, action) => produce(state, (draft) => {
   switch (action.type) {
-  case LOAD_DESTINATION_REQUEST: {
+  case LOAD_DESTINATION_BY_NAME_REQUEST: {
     draft.loadDestinationLoading = true;
     draft.loadDestinationDone = false;
     draft.loadDestinationError = null;
     break;
   }
-  case LOAD_DESTINATION_SUCCESS: {
+  case LOAD_DESTINATION_BY_NAME_SUCCESS: {
     draft.loadDestinationLoading = false;
     draft.loadDestinationDone = true;
     draft.destination = action.data;
     break;
   }
-  case LOAD_DESTINATION_FAILURE: {
+  case LOAD_DESTINATION_BY_NAME_FAILURE: {
     draft.loadDestinationLoading = false;
     draft.loadDestinationError = action.error;
     break;
