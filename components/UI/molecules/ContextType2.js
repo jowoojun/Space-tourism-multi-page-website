@@ -9,9 +9,13 @@ const LimitedContainer = styled.div`
   justify-content: center;
   align-items: center;
   
+  @media screen and (min-width: 767px) {
+    padding: 2rem 98px 49px;
+  }
   @media screen and (min-width: 1023px) {
     align-items: flex-start;
     width: auto;
+    padding: 37px 0 54px;
   }
 `
 const FlexContainer = styled.div`
@@ -19,7 +23,6 @@ const FlexContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 450px;
 
   @media screen and (min-width: 1023px) {
     align-items: flex-start;

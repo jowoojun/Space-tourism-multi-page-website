@@ -123,7 +123,7 @@ export const NavNumberFont = styled(NavFont)`
   }
 `
 
-export const NavContentNumberFont = styled(NavFont)`
+export const Heading_5NumberFont = styled(Heading_5)`
   font-weight: 700;
   line-height: 19px;
   color: #FFFFFF;

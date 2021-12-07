@@ -28,9 +28,19 @@ const PageContainer = styled.div`
   } 
 `
 
-const Horizon = styled.div`
-  margin: 0 1.5rem;
-  border-top: 1px solid #383b4b;
+const DesktopSpreadContainer = styled.div`
+  @media screen and (min-width: 1023px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 163px 112px 230px;
+  }
+`
+
+const ContentTextContainer = styled.div`
+  @media screen and (min-width: 1023px) {
+    width: 445px;
+  }
 `
 
 const PlanetTemplate = ({destination}) => {
@@ -40,11 +50,16 @@ const PlanetTemplate = ({destination}) => {
       {destination ? 
         <>
           <HeaderNavText />
-          <ContentImage images={destination.images} name={destination.name} imageInfo={ImageInfo.destination} />
-          <VerticalTabs />
-          <ContextType2 name={destination.name} context={destination.description}/>
-          <Horizon />
-          <PlanetDetail travel={destination.travel} distance={destination.distance}/>
+          <DesktopSpreadContainer>
+            <>
+              <ContentImage images={destination.images} name={destination.name} imageInfo={ImageInfo.destination} />
+            </>
+            <ContentTextContainer>
+              <VerticalTabs />
+              <ContextType2 name={destination.name} context={destination.description}/>
+              <PlanetDetail travel={destination.travel} distance={destination.distance}/>
+            </ContentTextContainer>
+          </DesktopSpreadContainer>
         </>
       :
         null

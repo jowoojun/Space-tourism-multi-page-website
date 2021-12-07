@@ -11,6 +11,9 @@ const VerticalTabContainer = styled.div`
   &:hover {
     border-bottom: ${props => props.currentHref === props.targetHref ? "3px solid white" : "3px solid #979797"};
   }
+  @media screen and (min-width: 767px) {
+    padding-bottom: 15px;
+  }
 `
 
 const VerticalTab = ({item}) => {
