@@ -31,22 +31,22 @@ const Horizon = styled.div`
   border-top: 1px solid #383b4b;
 `
 
-const ContextPlanetContainer = styled.div`
-
-`
-
 const PlanetTemplate = ({destination}) => {
   return (
     <PageContainer>
       <Header />
-      <ContextPlanetContainer>
-        <HeaderNavText />
-        <PlanetImages images={destination.images?.png}/>
-        <VerticalTabs />
-        <ContextType2 name={destination.name} context={destination.description}/>
-        <Horizon />
-        <PlanetDetail travel={destination.travel} distance={destination.distance}/>
-      </ContextPlanetContainer>
+      {destination ? 
+        <>
+          <HeaderNavText />
+          <PlanetImages images={destination.images}/>
+          <VerticalTabs />
+          <ContextType2 name={destination.name} context={destination.description}/>
+          <Horizon />
+          <PlanetDetail travel={destination.travel} distance={destination.distance}/>
+        </>
+      :
+        null
+      }
     </PageContainer>
   )
 }

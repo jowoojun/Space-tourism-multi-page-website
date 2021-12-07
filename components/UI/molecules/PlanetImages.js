@@ -5,7 +5,7 @@ import { FlexCenterBox } from "../atoms/FlexBox"
 const PlanetImages = ({images}) => {
   return (
     <FlexCenterBox>
-      {images && <Image src={images} alt={"Planet"} width={170} height={170} /> }
+      <Image src={images.png} alt={"Planet"} width={170} height={170} />
     </FlexCenterBox>
   )
 }

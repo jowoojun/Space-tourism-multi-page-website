@@ -1,22 +1,23 @@
 import { useRouter } from 'next/router'
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+
 import PlanetTemplate from '../../components/templates/PlanetTemplate'
 
-import data from '../../public/data.json'
+import { LOAD_DESTINATION_REQUEST } from '../../reducers/destination';
 
 export default function Planet() {
   const router = useRouter();
   const { planet } = router.query
-  const [destination, setDestination] = useState({});
-
+  const dispatch = useDispatch();
+  const { destination } = useSelector((state) => state.destination);
+  
   useEffect(() => {
-    data.destinations.map((dest) => {
-      var targetName = dest.name.toLowerCase()
-      if(planet === targetName) {
-        setDestination(dest)
-      }
+    dispatch({
+      type: LOAD_DESTINATION_REQUEST,
+      data: { planet: planet },
     })
-  }, [])
+  }, [planet])
 
   return (
     <PlanetTemplate destination={destination} />
