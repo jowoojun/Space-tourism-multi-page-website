@@ -1,11 +1,13 @@
 import styled from 'styled-components'
 
 import Header from './Header'
-import PlanetImages from '../UI/molecules/PlanetImages'
+import ContentImage from '../UI/molecules/ContentImage'
 import ContextType2 from '../UI/molecules/ContextType2'
 import PlanetDetail from '../UI/molecules/PlanetDetail'
 import VerticalTabs from '../UI/molecules/VerticalTabs'
 import HeaderNavText from '../UI/molecules/HeaderNavText'
+
+import { ImageInfo } from '../../config/designConfig'
 
 const PageContainer = styled.div`
   width: 100vw;
@@ -38,7 +40,7 @@ const PlanetTemplate = ({destination}) => {
       {destination ? 
         <>
           <HeaderNavText />
-          <PlanetImages images={destination.images}/>
+          <ContentImage images={destination.images} name={destination.name} imageInfo={ImageInfo.destination} />
           <VerticalTabs />
           <ContextType2 name={destination.name} context={destination.description}/>
           <Horizon />
