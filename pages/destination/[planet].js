@@ -4,13 +4,26 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import PlanetTemplate from '../../components/templates/PlanetTemplate'
 
-import { LOAD_DESTINATION_BY_NAME_REQUEST } from '../../reducers/destination';
+import { 
+  LOAD_DESTINATIONS_REQUEST, 
+  LOAD_DESTINATION_BY_NAME_REQUEST,
+  GET_DESTINATION_NAME_LIST
+} from '../../reducers/destination';
 
 export default function Planet() {
   const router = useRouter();
   const { planet } = router.query
   const dispatch = useDispatch();
-  const { destination } = useSelector((state) => state.destination);
+  const { destinationNameList, destination } = useSelector((state) => state.destination);
+
+  useEffect(() => {
+    dispatch({
+      type: LOAD_DESTINATIONS_REQUEST,
+    });
+    dispatch({
+      type: GET_DESTINATION_NAME_LIST,
+    });
+  }, [])
 
   useEffect(() => {
     dispatch({
@@ -20,6 +33,6 @@ export default function Planet() {
   }, [planet])
 
   return (
-    <PlanetTemplate destination={destination} />
+    <PlanetTemplate tabItems={destinationNameList} destination={destination} />
   )
 }

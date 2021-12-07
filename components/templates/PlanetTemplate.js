@@ -43,7 +43,7 @@ const ContentTextContainer = styled.div`
   }
 `
 
-const PlanetTemplate = ({destination}) => {
+const PlanetTemplate = ({destination, tabItems}) => {
   return (
     <PageContainer>
       <Header />
@@ -55,7 +55,7 @@ const PlanetTemplate = ({destination}) => {
               <ContentImage images={destination.images} name={destination.name} imageInfo={ImageInfo.destination} />
             </>
             <ContentTextContainer>
-              <VerticalTabs />
+              <VerticalTabs tabItems={tabItems}/>
               <ContextType2 name={destination.name} context={destination.description}/>
               <PlanetDetail travel={destination.travel} distance={destination.distance}/>
             </ContentTextContainer>

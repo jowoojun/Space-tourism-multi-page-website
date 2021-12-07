@@ -24,30 +24,11 @@ const VerticalTabsLayoutContainer = styled(FlexCenterBox)`
   }
 `
 
-const tabsItem = [ 
-  { 
-    name: 'moon',
-    href: '/destination/moon'
-  }, 
-  { 
-    name: 'mars',
-    href: '/destination/mars'
-  }, 
-  { 
-    name: 'europa',
-    href: '/destination/europa'
-  }, 
-  { 
-    name: 'titan',
-    href: '/destination/titan'
-  } 
-]
-
-const VerticalTabs = () => {
+const VerticalTabs = ({tabItems}) => {
   return (
     <VerticalTabsLayoutContainer>
       <VerticalTabsContainer>
-        {tabsItem.map((item) => 
+        {tabItems.map((item) => 
           <VerticalTab key={item.name} item={item} />
         )}
       </VerticalTabsContainer>
