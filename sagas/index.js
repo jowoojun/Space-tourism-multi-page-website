@@ -2,6 +2,7 @@ import { all, fork } from 'redux-saga/effects';
 import axios from 'axios';
 
 import destinationSaga from './destination';
+import crewSaga from './crew';
 
 // import { backendURL } from '../config/config';
 
@@ -12,5 +13,6 @@ import destinationSaga from './destination';
 export default function* rootSaga() {
   yield all([
     fork(destinationSaga),
+    fork(crewSaga),
   ]);
 }

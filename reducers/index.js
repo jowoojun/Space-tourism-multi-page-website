@@ -2,6 +2,7 @@ import { HYDRATE } from 'next-redux-wrapper';
 import { combineReducers } from 'redux';
 
 import destination from './destination';
+import crew from './crew';
 
 const rootReducer = (state, action) => {
   switch (action.type) {
@@ -11,6 +12,7 @@ const rootReducer = (state, action) => {
   default: {
     const combineReducer = combineReducers({
       destination,
+      crew,
     });
     return combineReducer(state, action);
   }
