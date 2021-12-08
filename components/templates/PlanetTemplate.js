@@ -5,7 +5,7 @@ import Header from './Header'
 import ContentImage from '../UI/molecules/ContentImage'
 import ContextType2 from '../UI/molecules/ContextType2'
 import PlanetDetail from '../UI/molecules/PlanetDetail'
-import VerticalTabs from '../UI/molecules/VerticalTabs'
+import VerticalTabsText from '../UI/molecules/VerticalTabsText'
 import HeaderNavText from '../UI/molecules/HeaderNavText'
 
 import { ImageInfo } from '../../config/designConfig'
@@ -51,7 +51,7 @@ const PlanetTemplate = ({destination, tabItems}) => {
               <ContentImage images={destination.images} name={destination.name} imageInfo={ImageInfo.destination} />
             </>
             <ContentTextContainer>
-              <VerticalTabs tabItems={tabItems}/>
+              <VerticalTabsText tabItems={tabItems}/>
               <ContextType2 name={destination.name} context={destination.description}/>
               <PlanetDetail travel={destination.travel} distance={destination.distance}/>
             </ContentTextContainer>

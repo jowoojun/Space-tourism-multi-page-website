@@ -14,7 +14,7 @@ const menuList = [
   },
   {
     text: 'CREW',
-    href: '/crew'
+    href: '/crew/douglas_hurley'
   },
   {
     text: 'TECHNOLOGY',

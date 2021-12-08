@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 import { NavFont } from './Context';
 
-const VerticalTabContainer = styled.div`
+const VerticalTabTextContainer = styled.div`
   padding-bottom: 0.5rem;
   text-transform: uppercase;
   border-bottom: ${props => props.currentHref === props.targetHref ? "3px solid white" : "3px solid transparent"};
@@ -16,22 +16,22 @@ const VerticalTabContainer = styled.div`
   }
 `
 
-const VerticalTab = ({item}) => {
+const VerticalTabText = ({item}) => {
   const router = useRouter()
   const { planet } = router.query;
   
   return (
     <Link href={item.href}>
       <a>
-        <VerticalTabContainer
+        <VerticalTabTextContainer
           currentHref={planet} 
           targetHref={item.href.split('/')[2]} 
         >
           <NavFont>{item.name}</NavFont>
-        </VerticalTabContainer>
+        </VerticalTabTextContainer>
       </a>
     </Link>
   )
 }
 
-export default VerticalTab;
+export default VerticalTabText;

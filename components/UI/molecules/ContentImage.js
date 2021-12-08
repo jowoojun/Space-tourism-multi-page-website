@@ -12,7 +12,7 @@ const ContentImageContainer = styled.div`
     width: ${props => props.imageInfo.tablet.width};
     height: ${props => props.imageInfo.tablet.height};
   }
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1400px) {
     width: ${props => props.imageInfo.desktop.width};
     height: ${props => props.imageInfo.desktop.height};
   }
@@ -22,7 +22,7 @@ const ContentImage = ({images, name, imageInfo}) => {
   return (
     <FlexCenterBox>
       <ContentImageContainer imageInfo={imageInfo}>
-        <Image src={images.png} alt={name} layout='fill' />
+        <Image src={images.png} alt={name} objectFit="contain" layout='fill' />
       </ContentImageContainer>
     </FlexCenterBox>
   )

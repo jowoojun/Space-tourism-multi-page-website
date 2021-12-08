@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
-import VerticalTab from '../atoms/VerticalTab'
+import VerticalTabText from '../atoms/VerticalTabText'
 import { FlexCenterBox } from "../atoms/FlexBox"
 
-const VerticalTabsContainer = styled.div`
+const VerticalTabsTextContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,16 +24,16 @@ const VerticalTabsLayoutContainer = styled(FlexCenterBox)`
   }
 `
 
-const VerticalTabs = ({tabItems}) => {
+const VerticalTabsText = ({tabItems}) => {
   return (
     <VerticalTabsLayoutContainer>
-      <VerticalTabsContainer>
+      <VerticalTabsTextContainer>
         {tabItems.map((item) => 
-          <VerticalTab key={item.name} item={item} />
+          <VerticalTabText key={item.name} item={item} />
         )}
-      </VerticalTabsContainer>
+      </VerticalTabsTextContainer>
     </VerticalTabsLayoutContainer>
   )
 }
 
-export default VerticalTabs;
+export default VerticalTabsText;

@@ -1,29 +1,10 @@
 import styled from 'styled-components'
 
 import { Heading_1, Heading_5, BodyFont } from '../atoms/Context'
+import { ContextTypeContainer, ContextTypeInnerContainer} from '../atoms/ContextTypeContainer'
 
-const LimitedContainer = styled.div`
-  width: 100%;
-  padding: 0 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  @media screen and (min-width: 1023px) {
-    align-items: flex-start;
-    width: auto;
-  }
-`
-const FlexContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+const ContextType1InnerContainer = styled(ContextTypeInnerContainer)`
   max-width: 450px;
-
-  @media screen and (min-width: 1023px) {
-    align-items: flex-start;
-  }
 `
 
 const Blank = styled.div`
@@ -33,18 +14,18 @@ const Blank = styled.div`
   }
 `
 
-const ThreeContext = ({context}) => {
+const ContextType1 = ({context}) => {
   return (
-    <LimitedContainer>
-      <FlexContainer>
+    <ContextTypeContainer>
+      <ContextType1InnerContainer>
         <Heading_5>{context.h5}</Heading_5>
         <Blank />
         <Heading_1>{context.h1}</Heading_1>
         <Blank />
         <BodyFont>{context.body}</BodyFont>
-      </FlexContainer>
-    </LimitedContainer>
+      </ContextType1InnerContainer>
+    </ContextTypeContainer>
   )
 }
 
-export default ThreeContext;
+export default ContextType1;
