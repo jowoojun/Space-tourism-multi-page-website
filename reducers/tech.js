@@ -61,7 +61,7 @@ const ReducerTech =  (state = initialState, action) => produce(state, (draft) =>
     const nameList = draft.mainTech.map(({ name }) => {
       return { 
         name: name.toLowerCase(),
-        href: `/tech/${name.toLowerCase().replace(/ /gi, '_')}`
+        href: `/technology/${name.toLowerCase().replace(/ /gi, '_')}`
       }
     });
     draft.techNameList = draft.techNameList.concat(nameList)
