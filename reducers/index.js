@@ -3,6 +3,7 @@ import { combineReducers } from 'redux';
 
 import destination from './destination';
 import crew from './crew';
+import tech from './tech';
 
 const rootReducer = (state, action) => {
   switch (action.type) {
@@ -13,6 +14,7 @@ const rootReducer = (state, action) => {
     const combineReducer = combineReducers({
       destination,
       crew,
+      tech,
     });
     return combineReducer(state, action);
   }

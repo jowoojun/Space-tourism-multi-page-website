@@ -3,6 +3,7 @@ import axios from 'axios';
 
 import destinationSaga from './destination';
 import crewSaga from './crew';
+import techSaga from './tech';
 
 // import { backendURL } from '../config/config';
 
@@ -14,5 +15,6 @@ export default function* rootSaga() {
   yield all([
     fork(destinationSaga),
     fork(crewSaga),
+    fork(techSaga),
   ]);
 }

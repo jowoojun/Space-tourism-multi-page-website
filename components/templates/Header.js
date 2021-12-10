@@ -18,7 +18,7 @@ const menuList = [
   },
   {
     text: 'TECHNOLOGY',
-    href: '/technologoy'
+    href: '/technologoy/launch_vehicle'
   }
 ]
 
