@@ -1,15 +1,21 @@
 import styled from 'styled-components'
 
-import BackgroundImageContainer from '../UI/atoms/BackgroundImageContainer'
 import Header from './Header'
-import ContentImage from '../UI/molecules/ContentImage'
+import ImageCrew from '../UI/atoms/ImageCrew'
 import ContextType3 from '../UI/molecules/ContextType3'
 import VerticalTabsCircle from '../UI/molecules/VerticalTabsCircle'
 import HeaderNavText from '../UI/molecules/HeaderNavText'
 
 import { ImageInfo } from '../../config/designConfig'
 
-const PageContainer = styled(BackgroundImageContainer)`
+const PageContainer = styled.div`
+  width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
   background: url(/crew/background-crew-mobile.jpg) no-repeat;
   background-size: cover;
   @media screen and (min-width: 767px) {
@@ -42,8 +48,8 @@ const BorderBox = styled.div`
     border: 0;
   }
   @media screen and (min-width: 1430px) {
-    width: 50%;
-    height: 100%;
+    width: 40%;
+    height: 80%;
   }
 `
 
@@ -74,7 +80,7 @@ const CrewTemplate = ({crew, tabItems}) => {
           <HeaderNavText number={"02"} text={"MEET YOUR CREW"} />
           <DesktopSpreadContainer>
             <BorderBox>
-              <ContentImage images={crew.images} name={crew.name} imageInfo={ImageInfo.crew} />
+              <ImageCrew images={crew.images} name={crew.name} imageInfo={ImageInfo.crew} />
             </BorderBox>
             <ContentContainer>
               <VerticalTabsOrderContainer>

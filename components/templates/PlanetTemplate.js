@@ -1,8 +1,7 @@
 import styled from 'styled-components'
 
-import BackgroundImageContainer from '../UI/atoms/BackgroundImageContainer'
 import Header from './Header'
-import ContentImage from '../UI/molecules/ContentImage'
+import ImagePlanet from '../UI/atoms/ImagePlanet'
 import ContextType2 from '../UI/molecules/ContextType2'
 import PlanetDetail from '../UI/molecules/PlanetDetail'
 import VerticalTabsText from '../UI/molecules/VerticalTabsText'
@@ -10,7 +9,14 @@ import HeaderNavText from '../UI/molecules/HeaderNavText'
 
 import { ImageInfo } from '../../config/designConfig'
 
-const PageContainer = styled(BackgroundImageContainer)`
+const PageContainer = styled.div`
+  width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
   background: url(/destination/background-destination-mobile.jpg) no-repeat;
   background-size: cover;
   @media screen and (min-width: 767px) {
@@ -48,7 +54,7 @@ const PlanetTemplate = ({destination, tabItems}) => {
           <HeaderNavText number={"01"} text={"PICK YOUR DESTINATION"} />
           <DesktopSpreadContainer>
             <>
-              <ContentImage images={destination.images} name={destination.name} imageInfo={ImageInfo.destination} />
+              <ImagePlanet images={destination.images} name={destination.name} imageInfo={ImageInfo.destination} />
             </>
             <ContentTextContainer>
               <VerticalTabsText tabItems={tabItems}/>

@@ -9,4 +9,9 @@ export const ImageInfo = {
     tablet: { width: '100%', height: '572px' },
     desktop: { width: '100%', height: '650px' }
   },
+  tech: {
+    mobile: { height: '170px' },
+    tablet: { height: '310px' },
+    desktop: { width: '515px', height: '527px' }
+  },
 }
