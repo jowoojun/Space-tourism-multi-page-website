@@ -19,7 +19,7 @@ const VerticalMenuContainer = styled.div`
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(81.5485px);
   }
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1430px) {
     width: 830px;
   }
 `
@@ -35,7 +35,7 @@ const MenuItemContainer = styled.div`
 `
 
 const Blank = styled.div`
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1430px) {
     margin-left: 11px;
   }
 `

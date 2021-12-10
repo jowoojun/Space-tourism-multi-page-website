@@ -10,7 +10,7 @@ const ContextType3Container = styled(ContextTypeContainer)`
     padding: 0 124px;
     height: 152px;
   }
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1430px) {
     padding: 37px 0 54px;
     height: auto;
   }
@@ -23,20 +23,20 @@ const ContextHeaderText = styled(Heading_4)`
 
 const Blank1 = styled.div`
   height: 8px;
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1430px) {
     height: 15px;
   }
 `
 
 const ContextBodyFont = styled(BodyFont)`
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1430px) {
     width: 444px;
   }
 `
 
 const Blank2 = styled.div`
   height: 16px;
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1430px) {
     height: 27px;
   }
 `

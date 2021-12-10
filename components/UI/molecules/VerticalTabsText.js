@@ -13,13 +13,13 @@ const VerticalTabsTextContainer = styled.div`
   @media screen and (min-width: 767px) {
     padding-top: 53px;
   }
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1430px) {
     padding-top: 0px;
   }
 `
 
 const VerticalTabsLayoutContainer = styled(FlexCenterBox)`
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1430px) {
     align-items: flex-start;
   }
 `

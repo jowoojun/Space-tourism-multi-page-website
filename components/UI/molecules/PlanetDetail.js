@@ -12,7 +12,7 @@ const PlanetDetailContainer = styled.div`
     margin: 0 98px 62px;
     padding: 0 57.5px 0 65.5px;
   }
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1430px) {
     padding: 0;
     margin: 0;
   }
@@ -29,7 +29,7 @@ const DetailItemContainer = styled.div`
   @media screen and (min-width: 767px) {
     margin-top: 29px;
   }
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1430px) {
     margin-top: 28px;
     align-items: flex-start;
     width: 50%;

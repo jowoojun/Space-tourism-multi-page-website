@@ -12,7 +12,7 @@ const PaddingContainer = styled.div`
   @media screen and (min-width: 767px) {
     padding: 6.625rem 0 5.625rem;
   }
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1430px) {
     flex-direction: row;
     align-items: flex-end;
     padding: 0 10.3125rem 131px;
@@ -24,7 +24,7 @@ const Blank = styled.div`
   @media screen and (min-width: 767px) {
     margin-top: 156px;
   }
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1430px) {
     margin-top: 0;
   }
 `

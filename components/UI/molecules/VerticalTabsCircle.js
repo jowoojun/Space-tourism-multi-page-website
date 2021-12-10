@@ -13,7 +13,7 @@ const VerticalTabsCircleContainer = styled.div`
     margin-top: 32px;
     padding-bottom: 40px;
   }
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1430px) {
     position: absolute;
     left: 167px;
     bottom: 94px;
@@ -22,7 +22,7 @@ const VerticalTabsCircleContainer = styled.div`
 `
 
 const VerticalTabsCircleLayoutContainer = styled(FlexCenterBox)`
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1430px) {
     align-items: flex-start;
   }
 `

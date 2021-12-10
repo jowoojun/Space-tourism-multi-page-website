@@ -17,7 +17,7 @@ const PageContainer = styled(BackgroundImageContainer)`
     background: url(/destination/background-destination-tablet.jpg) no-repeat;
     background-size: cover;
   }
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1430px) {
     background: url(/destination/background-destination-desktop.jpg) no-repeat;
     background-size: cover;
     justify-content: space-between;
@@ -25,7 +25,7 @@ const PageContainer = styled(BackgroundImageContainer)`
 `
 
 const DesktopSpreadContainer = styled.div`
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1430px) {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,7 +34,7 @@ const DesktopSpreadContainer = styled.div`
 `
 
 const ContentTextContainer = styled.div`
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1430px) {
     width: 445px;
   }
 `

@@ -10,7 +10,7 @@ const HeaderNavTextContainer = styled(FlexCenterBox)`
     justify-content: flex-start;
     margin: 40px 0 60px 38.5px;
   }
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1430px) {
     position: absolute;
     top: 212px;
     left: 166.5px;
@@ -25,7 +25,7 @@ const Blank = styled.div`
   @media screen and (min-width: 767px) {
     width: 19px;
   }
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1430px) {
     width: 28px;
   }
 `

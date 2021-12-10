@@ -7,7 +7,7 @@ export const ContextTypeContainer = styled.div`
   justify-content: center;
   align-items: center;
   
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1430px) {
     align-items: flex-start;
     width: auto;
   }
@@ -18,7 +18,7 @@ export const ContextTypeInnerContainer = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1430px) {
     align-items: flex-start;
   }
 `

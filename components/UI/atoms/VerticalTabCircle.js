@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const VerticalTabCircleContainer = styled.div`
   padding: 8px 8px 0;
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1430px) {
     padding: 8px 12px 0;
   }
 `

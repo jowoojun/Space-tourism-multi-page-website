@@ -17,7 +17,7 @@ const WhiteCircleContainer = styled.div`
     width: 242px;
     height: 242px;
   }
-  @media (min-width: 1023px) {
+  @media (min-width: 1430px) {
     width: 274px;
     height: 274px;
   }
@@ -50,7 +50,7 @@ const HoverEventCircle = styled.div`
     width: 375px;
     height: 375px;
   }
-  @media (min-width: 1023px) {
+  @media (min-width: 1430px) {
     width: 450px;
     height: 450px;
   }

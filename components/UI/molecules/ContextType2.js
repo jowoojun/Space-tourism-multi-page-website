@@ -9,7 +9,7 @@ const ContextType2Container = styled(ContextTypeContainer)`
   @media screen and (min-width: 767px) {
     padding: 2rem 98px 49px;
   }
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1430px) {
     padding: 37px 0 54px;
   }
 `
@@ -19,7 +19,7 @@ const Blank = styled.div`
   @media screen and (min-width: 767px) {
     height: 8px;
   }
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1430px) {
     height: 14px;
   }
 `

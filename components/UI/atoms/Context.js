@@ -16,7 +16,7 @@ export const Heading_1 = styled(DefaultFont)`
     font-size: 150px;
     line-height: 150px;
   }
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1430px) {
     font-size: 150px;
     line-height: auto;
   }
@@ -31,7 +31,7 @@ export const Heading_2 = styled(DefaultFont)`
   @media screen and (min-width: 767px) {
     font-size: 80px;
   }
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1430px) {
     font-size: 100px;
   }
 `
@@ -45,7 +45,7 @@ export const Heading_3 = styled(DefaultFont)`
   @media screen and (min-width: 767px) {
     font-size: 40px;
   }
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1430px) {
     font-size: 56px;
   }
 `
@@ -59,7 +59,7 @@ export const Heading_4 = styled(DefaultFont)`
   @media screen and (min-width: 767px) {
     font-size: 24px;
   }
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1430px) {
     font-size: 32px;
   }
 `
@@ -75,7 +75,7 @@ export const Heading_5 = styled(DefaultFont)`
     font-size: 20px;
     letter-spacing: 3.38px;
   }
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1430px) {
     font-size: 28px;
     letter-spacing: 4.72px;
   }
@@ -107,7 +107,7 @@ export const NavFont = styled(DefaultFont)`
     font-size: 14px;
     letter-spacing: 2.36px;
   }
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1430px) {
     font-size: 16px;
     letter-spacing: 2.7px;
   }
@@ -118,7 +118,7 @@ export const NavNumberFont = styled(NavFont)`
   @media screen and (min-width: 767px) {
     display: none;
   }
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1430px) {
     display: block;
   }
 `
@@ -142,7 +142,7 @@ export const BodyFont = styled(DefaultFont)`
     font-size: 16px;
     line-height: 28px;
   }
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1430px) {
     font-size: 18px;
     line-height: 32px;
     text-align: left;
