@@ -16,7 +16,7 @@ const PageContainer = styled(BackgroundImageContainer)`
     background: url(/crew/background-crew-tablet.jpg) no-repeat;
     background-size: cover;
   }
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1430px) {
     background: url(/crew/background-crew-desktop.jpg) no-repeat;
     background-size: cover;
     justify-content: space-between;
@@ -26,13 +26,12 @@ const PageContainer = styled(BackgroundImageContainer)`
 const DesktopSpreadContainer = styled.div`
   display: flex;
   flex-direction: column;
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1430px) {
     height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-right: 165px;
   }
 `
 
@@ -42,8 +41,8 @@ const BorderBox = styled.div`
     order: 3;
     border: 0;
   }
-  @media screen and (min-width: 1023px) {
-    width: 40%;
+  @media screen and (min-width: 1430px) {
+    width: 50%;
     height: 100%;
   }
 `
@@ -60,7 +59,7 @@ const ContentContainer = styled.div`
     display: flex;
     flex-direction: column;
   }
-  @media screen and (min-width: 1023px) {
+  @media screen and (min-width: 1430px) {
     flex-shrink: 0;
     padding-left: 165px;
   }
