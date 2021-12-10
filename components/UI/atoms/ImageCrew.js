@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import styled from 'styled-components'
 
-import { FlexCenterBox } from "../atoms/FlexBox"
+import { FlexCenterBox } from "./FlexBox"
 
 import useDeviceSize from '../../../hooks/useDeviceSize'
 
